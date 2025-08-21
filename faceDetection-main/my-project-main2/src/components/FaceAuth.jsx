@@ -182,7 +182,7 @@ const FaceAuth = () => {
         const formData = new FormData();
         formData.append("photo", blob, "face.jpg");
 
-        const res = await fetch("http://localhost:5009/api/auth/login", {
+        const res = await fetch("https://facedetection-main-backend.onrender.com/api/auth/login", {
           method: "POST",
           body: formData,
         });
