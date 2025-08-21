@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:5174",
+    origin: "https://facedetection-main-frontend.onrender.com",
     methods: ["GET", "POST", "PUT", "DELETE"],
   })
 );
