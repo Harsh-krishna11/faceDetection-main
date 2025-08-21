@@ -128,10 +128,10 @@ const FaceAuth = () => {
         }
         formData.append("username", username);
         formData.append("email", email);
-        endpoint = "http://localhost:5009/api/auth/register";
+        endpoint = "https://facedetection-main-backend.onrender.com/api/auth/register";
       } else {
         // authMode is 'login'
-        endpoint = "http://localhost:5009/api/auth/login";
+        endpoint = "https://facedetection-main-backend.onrender.com/api/auth/login";
       }
 
       // Perform the API call
