@@ -15,7 +15,7 @@ export async function loadModels() {
   // await faceapi.nets.ssdMobilenetv1.loadFromDisk(MODEL_URL);
   await faceapi.nets.tinyFaceDetector.loadFromDisk(MODEL_URL);
   await faceapi.nets.faceRecognitionNet.loadFromDisk(MODEL_URL);
-  // await faceapi.nets.faceLandmark68Net.loadFromDisk(MODEL_URL);
+  await faceapi.nets.faceLandmark68Net.loadFromDisk(MODEL_URL);
 }
 
 export async function getFaceEmbedding(imageUrl) {
